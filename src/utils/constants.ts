@@ -1,9 +1,5 @@
-const HOST_PORT = 'http://localhost:5000'
-//const HOST_PORT = 'http://200.12.136.75:5000'
-//const HOST_PORTB= 'http://200.12.136.74:4000'
-//const HOST_PORTB= 'http://127.0.0.1:4000'
-//const HOST_PORT= 'http://172.22.160.97:5000'
-//const HOST_PORTB= 'http://172.22.160.70:4000'
+/// <reference types="vite/client" />
+const HOST_PORT = import.meta.env.VITE_HOST_PORT || 'http://localhost:5000'
 export const URI_ALU = `${HOST_PORT}/alutivos`
 export const URI_CUR = `${HOST_PORT}/cursadas`
 export const URI_EGR = `${HOST_PORT}/dbegresados`
